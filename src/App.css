@@ -2,31 +2,126 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
+.App-body {
   background-color: #282c34;
   min-height: 100vh;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-body h1 {
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-body p {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.subtext {
+  justify-self: flex-start;
+}
+
+.list {
+  min-width: 400px;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  background: #0074D9;
+  margin: 20px 0;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+.delete {
+  border: none;
+  background-color: #0074D9;
+  border-radius: 90%;
+  padding: 8px 10px 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.delete:hover {
+  background-color: #001f3f;
+}
+
+.button {
+  background-color: #001f3f;
+  color: #FFF;
+  margin-top: 16px;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 14px;
+  border: 2px solid #001f3f;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #282c34;
+}
+
+.mainButton {
+  min-width: 400px;
+}
+
+.modalButton {
+  margin: 14px;
+}
+
+.modalButton:disabled {
+  background-color: gray;
+}
+
+.modalButton:disabled:hover {
+  cursor: not-allowed;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position: fixed;
+  background: #282c34;
+  border: 2px solid #001f3f;
+  border-radius: 3px;
+  width: 400px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-main input {
+  border: 2px solid #001f3f;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
 }
